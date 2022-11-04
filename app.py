@@ -11,7 +11,7 @@ def welcome():
         return render_template("index-quiz.html")
     
     # the user has filled out the quiz
-    if request.method == "POST":
+    #if request.method == "POST":
         # the user has filled out the quiz and we want to display proper pathway resources
         # return render_template("propertemplate.html")
        first_name = request.form.get("1. What level of education does you belong to?")
