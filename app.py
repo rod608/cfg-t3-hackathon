@@ -26,6 +26,8 @@ def welcome():
         schools = schools[schools["Grade"] == first_answer]
         schools = schools[schools["Time_Available"] == second_answer]
         schools = schools[schools["Finances"] == third_answer]
+        schools["Cost of program"] = schools["Cost of program"].apply(lambda x: "$" + str(x) + ".00")
+        schools["Average Salary Outcome"] = schools["Average Salary Outcome"].apply(lambda x: "$" + str(x) + "0")
         schools.rename(columns = {"Cost(3 diff ranges, annual)": "Cost", "Opportunity_Type":"Opportunity"}, inplace = True)
         
         if second_answer == "0-1 Year":
