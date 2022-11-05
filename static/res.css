@@ -1,0 +1,41 @@
+h1 {
+    font-family: 'Poor Story', cursive;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.row {
+    min-height: 6rem; !important;
+    max-height: 100rem; !important;
+    margin-bottom: 2rem;
+}
+
+#r1 {
+    background-color: #1E326D;
+}
+
+#r2 {
+    background-color: #3370B5;
+}
+
+#r3 {
+    background-color: #2CB396;
+}
+
+#r4 {
+    background-color: #6BCAB6;
+}
