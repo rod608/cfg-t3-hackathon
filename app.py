@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import pandas as pd
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -18,7 +19,9 @@ def welcome():
         first_answer = request.form.get("q1")
         second_answer = request.form.get("q2")
         third_answer = request.form.get("q3")
-        return render_template("result.html")
+        schools = pd.read_csv("T3Data.csv")
+        
+        return render_template("result.html", schools=schools)
 
 
 @app.route("/home")
