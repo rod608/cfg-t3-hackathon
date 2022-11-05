@@ -1,2 +1,7 @@
 *.ppk
 *.pem
+__pycache__
+venv
+.idea
+__pycache__
+.DS_Store
