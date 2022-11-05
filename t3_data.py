@@ -5,23 +5,12 @@ connector = Connector()
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from google.cloud.sql.connector import Connector, IPTypes
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+db = SQLAlchemy(app)
 
-'''def getconn() -> pymysql.connections.Connection:
-    conn: pymysql.connections.Connection = connector.connect(
-        "team14-t3:us-central1:t3",
-        "pymysql",
-        user="victoria",
-        password="Tabboule7",
-        db="t3_team14"
-    )
-    return conn'''
-
-# create connection pool
-''''pool = sqlalchemy.create_engine(
-    "mysql+pymysql://",
-    creator=getconn,
-)
-'''
 def getconn():
     with Connector() as connector:
         conn = connector.connect(
@@ -45,3 +34,11 @@ app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
 
 db = SQLAlchemy(app)
 
+from sqlalchemy import MetaData
+meta = MetaData()
+data = Table(
+   't3', meta, 
+   Column('id', Integer, primary_key = True), 
+   Column('grade', String), 
+   Column('income', String), 
+)

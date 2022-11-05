@@ -246,7 +246,7 @@
 <h2>Schools!</h2>
 
 <body>
-    {{ schools.to_html() | safe}}
+    {{ schools.to_html(escape=False, index=False, columns=["Name of Institution ",	"Cost", "Opportunity_Type",	"Need Based", "City ",	"Size", "Pub or Private",	"link"]) | safe}}
 </body>
 
 <p>Our protagonist could not so much as a whisper out of the shadowy figure…</p>

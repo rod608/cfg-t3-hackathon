@@ -20,7 +20,11 @@ def welcome():
         second_answer = request.form.get("q2")
         third_answer = request.form.get("q3")
         schools = pd.read_csv("T3Data.csv")
-        
+        schools = schools[schools["Grade"] == first_answer]
+        schools = schools[schools["Time_Available"] == second_answer]
+        schools = schools[schools["Finances"] == third_answer]
+        schools.rename(columns = {"Cost(3 diff ranges, annual)": "Cost"}, inplace = True)
+        schools["link"] = schools["link"].apply(lambda x: "<a href="+x+">Cost Information</a>")
         return render_template("result.html", schools=schools)
 
 
