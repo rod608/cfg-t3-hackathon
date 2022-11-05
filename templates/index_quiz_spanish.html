@@ -24,7 +24,7 @@
   <!-- Nav -->
   <nav class="navbar navbar-expand-lg bg-light shadow" style="background-color: #29A489" ; !important;>
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{ url_for('home') }}">
+      <a class="navbar-brand" href="{{ url_for('espanol') }}">
         <img src="../static/logo.jpg" alt="" class="img-fluid" style="max-height: 2.5rem;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -33,9 +33,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="{{ url_for('home') }}"
+          <a class="nav-link" href="{{ url_for('espanol') }}"
             style="font-family: Roboto, Helvetica, Arial, sans-serif;"><strong>Inicio</strong></a>
-          <a class="nav-link" href="{{ url_for('welcome') }}"
+          <a class="nav-link" href="{{ url_for('index_quiz_spanish') }}"
             style="font-family: Roboto, Helvetica, Arial, sans-serif;"><strong>Quiz</strong></a>
         </div>
       </div>
@@ -45,27 +45,28 @@
   <!-- Quiz -->
   <form method="post" class="border m-4 p-3 shadow h-75">
     <fieldset>
-      <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Montserrat', sans-serif;">What's Your Education Level?
+      <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Montserrat', sans-serif;">
+        ¿Cuál es su nivel de educación?
       </h3>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q1" id="middle_school" value="MS" required>
         <label class="form-check-label" for="middle_school">
-          Middle School
+          La escuela intermedia
         </label>
       </div>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q1" id="high_school" value="HS">
         <label class="form-check-label" for="high_school">
-          High School
+          La escuela secundaria
         </label>
       </div>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q1" id="college" value="College">
         <label class="form-check-label" for="college">
-          College
+          La universidad
         </label>
       </div>
     </fieldset>
@@ -73,29 +74,28 @@
     <hr class="w-75 mx-auto shadow border">
 
     <fieldset>
-      <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Montserrat', sans-serif;">Time Frame to get an
-        Education?</h3>
-
+      <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Montserrat', sans-serif;">
+        ¿Cuál es su duración de obtener una educación?</h3>
       <div class="form-check mb-1 w-25 mx-auto">
 
         <input class="form-check-input" type="radio" name="q2" id="1Y" value="0-1 Year" required>
 
         <label class="form-check-label" for="1Y">
-          1 Year
+          Un año
         </label>
       </div>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q2" id="2Y" value="2 year">
         <label class="form-check-label" for="2Y">
-          1-2 Years
+          Uno a dos años
         </label>
       </div>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q2" id="3Y" value="4 year">
         <label class="form-check-label" for="3Y">
-          2+ Years
+          Más que dos años
         </label>
       </div>
     </fieldset>
@@ -103,27 +103,28 @@
     <hr class="w-75 mx-auto shadow border">
 
     <fieldset>
-      <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Montserrat', sans-serif;">Your Household Income Range?
+      <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Montserrat', sans-serif;">
+        ¿El rango de ingresos de su hogar?
       </h3>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q3" id="under20" value="Low" required>
         <label class="form-check-label" for="under20">
-          Under 20k
+          Menos de $20k
         </label>
       </div>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q3" id="under80" value="Medium">
         <label class="form-check-label" for="under80">
-          Above 20k, but below 80k
+          Más de $20,000 pero menos de $80,000
         </label>
       </div>
 
       <div class="form-check mb-1 w-25 mx-auto">
         <input class="form-check-input" type="radio" name="q3" id="above80" value="High">
         <label class="form-check-label" for="above80">
-          Above 80k
+          Más que $80,000
         </label>
       </div>
     </fieldset>

@@ -17,7 +17,7 @@ def getconn():
             "team14-t3:us-central1:t3", # Cloud SQL Instance Connection Name
             "pg8000",
             user="victoria",
-            password="Tabboule7",
+            password="******",
             db="t3_team14",
             ip_type= IPTypes.PUBLIC  # IPTypes.PRIVATE for private IP
         )
