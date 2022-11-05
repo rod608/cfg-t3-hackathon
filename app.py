@@ -18,7 +18,7 @@ def welcome():
         first_answer = request.form.get("q1")
         second_answer = request.form.get("q2")
         third_answer = request.form.get("q3")
-        return "Your name is "+ first_answer + second_answer + third_answer
+        return render_template("result.html")
 
 
 @app.route("/home")
