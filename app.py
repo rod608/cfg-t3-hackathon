@@ -24,6 +24,7 @@ def welcome():
         schools = schools[schools["Time_Available"] == second_answer]
         schools = schools[schools["Finances"] == third_answer]
         schools.rename(columns = {"Cost(3 diff ranges, annual)": "Cost"}, inplace = True)
+        schools["link"] = schools["link"].apply(lambda x: "<a href="+x+">Cost Information</a>")
         return render_template("result.html", schools=schools)
 
 
