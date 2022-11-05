@@ -46,7 +46,7 @@ def news2():
     return render_template("newsletter.html")
 
 
-@app.route("/results-esp")
+@app.route("/resultados")
 def resultados():
     return render_template("resultados.html")
 
