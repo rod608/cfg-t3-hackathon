@@ -1,125 +1,51 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="../static/quiz.css"> -->
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg bg-light shadow" style="background-color: #29A489"; !important;>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('home') }}">
+        <img src="../static/logo.jpg" alt="" class="img-fluid" style="max-height: 2.5rem;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="{{ url_for('home') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;">Home</a>
+        <a class="nav-link" href="{{ url_for('welcome') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;">Quiz</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-        <style>
-        
-        table {
-        
-          font-family: arial, sans-serif;
-        
-          border-collapse: collapse;
-        
-          width: 100%;
-        
-        }
-        
-        
-        td, th {
-        
-          border: 1px solid #dddddd;
-        
-          text-align: left;
-        
-          padding: 8px;
-        
-        }
-        
-        
-        tr:nth-child(even) {
-        
-          background-color: #dddddd;
-        
-        }
-        
-        </style>
-        
-        </head>
-   
-<h1>Based on your profile....</h1>
+<!-- Lil Roadmap -->
+<h1 class="my-4 text-center">Based on your profile....</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 border">Hi</div>
+        <div class="col-8 border">Hi</div>
+    </div>
+</div>
 
 
 
-<h2>Financial Aid!</h2>
-
-<p>
-  It was a dark night. Somewhere, an owl hooted. The rain lashed down on the…
-</p>
-
-<table>
-
-    <tr>
-  
-      <th>Company</th>
-  
-      <th>Contact</th>
-  
-      <th>Country</th>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Alfreds Futterkiste</td>
-  
-      <td>Maria Anders</td>
-  
-      <td>Germany</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Centro comercial Moctezuma</td>
-  
-      <td>Francisco Chang</td>
-  
-      <td>Mexico</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Ernst Handel</td>
-  
-      <td>Roland Mendel</td>
-  
-      <td>Austria</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Island Trading</td>
-  
-      <td>Helen Bennett</td>
-  
-      <td>UK</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Laughing Bacchus Winecellars</td>
-  
-      <td>Yoshi Tannamuri</td>
-  
-      <td>Canada</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Magazzini Alimentari Riuniti</td>
-  
-      <td>Giovanni Rovelli</td>
-  
-      <td>Italy</td>
-  
-    </tr>
-  
-  </table>
 
 <h2>Scholarships!</h2>
 
@@ -142,7 +68,5 @@
 </body>
 
 <p>Our protagonist could not so much as a whisper out of the shadowy figure…</p>
-
+</body>
 </html>
-
-
