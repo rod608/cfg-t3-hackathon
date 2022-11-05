@@ -1,39 +1,102 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>multiple-choice quiz form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
+<!-- Nav -->
 
-<h3>Quiz</h3>
 
-<form method="post">
+<!-- Try to read form data. -->
+<form method="post" class="border m-4 p-3 shadow">
+    <fieldset>
+        <p class="mb-0 pb-0 mt-3">1. What level of education do you belong to?</p>
 
-Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="middle_school">
+          <label class="form-check-label" for="middle_school">
+            Middle School
+          </label>
+        </div>
 
-<P>1. What level of education does you belong to? <BR>
-<input type="radio" name="1. What level of education does you belong to? " value="Middle School">Middle School<BR>
-<input type="radio" name="1. What level of education does you belong to? " value="High School">High School<BR>
-<input type="radio" name="1. What level of education does you belong to? " value="College">College<BR>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="high_school">
+          <label class="form-check-label" for="high_school">
+            High School
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="college">
+          <label class="form-check-label" for="college">
+            College
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <p class="mb-0 pb-0 mt-3">2.  How much time are you able to spend pursuing an educational program?</p>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="1Y">
+          <label class="form-check-label" for="1Y">
+            1 Year
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="2Y">
+          <label class="form-check-label" for="2Y">
+            1-2 Years
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="3Y">
+          <label class="form-check-label" for="3Y">
+            2+ Years
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <p class="mb-0 pb-0 mt-3">3. What would you describe you current household income bracket as?</p>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" id="under20">
+          <label class="form-check-label" for="under20">
+            Under 20k
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" id="under80">
+          <label class="form-check-label" for="under80">
+            Above 20k, but below 80k
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" id="above80">
+          <label class="form-check-label" for="above80">
+            Above 80k
+          </label>
+        </div>
+    </fieldset>
+
 </p>
-
-<P>2.  How much time are you able to spend pursuing an educational program?<BR>
-<input type="radio" name="2.  How much time are you able to spend pursuing an educational program?" value="1 Year">1 Year<BR>
-<input type="radio" name="2.  How much time are you able to spend pursuing an educational program?" value="1-2 Years">1-2 Years<BR>
-<input type="radio" name="2.  How much time are you able to spend pursuing an educational program?" value="2+ Years">2+ Years<BR>
-</p>
-
-<P>3.  What would you describe you current household income bracket as?<BR>
-<input type="radio" name="3. The word which means suitcase is" value="Under 20k">Under 20k<BR>
-<input type="radio" name="3. The word which means suitcase is" value="Above 20k, but below 80k">Above 20k, but below 80k<BR>
-<input type="radio" name="3. The word which means suitcase is" value="Above 80k">Above 80k<BR>
-
-</p>
-
-
 <br>
-
-<input type="submit" value="Send Form">
-<input type="reset" value="Clear Form">
+    <button type="submit" class="btn btn-success" value="Send Form">Submit</button>
 </form>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
