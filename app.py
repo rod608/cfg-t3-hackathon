@@ -34,6 +34,10 @@ def welcome():
             return render_template("result.html", schools=schools)
 
 
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
 @app.route("/news")
 def news():
     return render_template("newsletter.html")
@@ -43,11 +47,17 @@ def news():
 def news2():
     return render_template("newsletter.html")
 
+@app.route("/espanol")
+def espanol():
+    return render_template("espanol.html")
 
 @app.route("/resultados")
 def resultados():
     return render_template("resultados.html")
 
+@app.route("/index-quiz-spanish")
+def index_quiz_spanish():
+    return render_template("index_quiz_spanish.html")
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8000)
