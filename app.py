@@ -33,13 +33,20 @@ def welcome():
         else:
             return render_template("result.html", schools=schools)
 
+
 @app.route("/news")
 def news():
     return render_template("newsletter.html")
 
+
 @app.route("/news/news2")
 def news2():
     return render_template("newsletter.html")
+
+
+@app.route("/resultados")
+def resultados():
+    return render_template("resultados.html")
 
 
 if __name__ == "__main__":
