@@ -6,33 +6,53 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
 <!-- Nav -->
+<nav class="navbar navbar-expand-lg bg-light shadow" style="background-color: #29A489; !important;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="../img/logo.jpg" alt="" class="img-fluid" style="max-height: 2.5rem;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">Option 1</a>
+        <a class="nav-link" href="#">Option 2</a>
+        <a class="nav-link" href="#">Option 3</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-
-<!-- Try to read form data. -->
+<!-- Quiz -->
 <form method="post" class="border m-4 p-3 shadow">
     <fieldset>
-        <p class="mb-0 pb-0 mt-3">1. What level of education do you belong to?</p>
+        <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Poor Story', cursive;">Education Level?</h3>
 
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q1" id="middle_school">
           <label class="form-check-label" for="middle_school">
             Middle School
           </label>
         </div>
 
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q1" id="high_school">
           <label class="form-check-label" for="high_school">
             High School
           </label>
         </div>
 
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q1" id="college">
           <label class="form-check-label" for="college">
             College
@@ -40,25 +60,26 @@
         </div>
     </fieldset>
 
-    <fieldset>
-        <p class="mb-0 pb-0 mt-3">2.  How much time are you able to spend pursuing an educational program?</p>
+    <hr class="w-75 mx-auto shadow border">
 
-        <div class="form-check">
+    <fieldset>
+        <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Poor Story', cursive;">Time to get an education?</h3>
+
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q2" id="1Y">
           <label class="form-check-label" for="1Y">
             1 Year
           </label>
         </div>
 
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q2" id="2Y">
           <label class="form-check-label" for="2Y">
             1-2 Years
           </label>
         </div>
 
-<form name="myForm" action="" method="post" onsubmit="">
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q2" id="3Y">
           <label class="form-check-label" for="3Y">
             2+ Years
@@ -66,34 +87,26 @@
         </div>
     </fieldset>
 
-    <fieldset>
-        <p class="mb-0 pb-0 mt-3">3. What would you describe you current household income bracket as?</p>
+    <hr class="w-75 mx-auto shadow border">
 
-<P>1. What level of education does you belong to? <BR>
-<input type="radio" name="1" value="Middle School">Middle School<BR>
-<input type="radio" name="1" value="High School">High School<BR>
-<input type="radio" name="1" value="College">College<BR>
-</p>
-        <div class="form-check">
+    <fieldset>
+        <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Poor Story', cursive;">Household Income?</h3>
+
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q3" id="under20">
           <label class="form-check-label" for="under20">
             Under 20k
           </label>
         </div>
 
-<P>2. How much time are you able to spend pursuing an educational program?<BR>
-<input type="radio" name="2" value="1 Year">1 Year<BR>
-<input type="radio" name="2" value="1-2 Years">1-2 Years<BR>
-<input type="radio" name="2" value="2+ Years">2+ Years<BR>
-</p>
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q3" id="under80">
           <label class="form-check-label" for="under80">
             Above 20k, but below 80k
           </label>
         </div>
 
-        <div class="form-check">
+        <div class="form-check mb-1 w-25 mx-auto">
           <input class="form-check-input" type="radio" name="q3" id="above80">
           <label class="form-check-label" for="above80">
             Above 80k
@@ -103,7 +116,7 @@
 
 </p>
 <br>
-    <button type="submit" class="btn btn-success" value="Send Form">Submit</button>
+    <button type="submit" class="btn btn-success mx-auto" value="Send Form">Submit</button>
 </form>
 
 <!-- Bootstrap -->
