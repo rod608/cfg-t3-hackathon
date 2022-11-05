@@ -48,6 +48,15 @@ tr:nth-child(even) {
     background-color: #6BCAB6;
 }
 
+table {
+    display: block;
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (max-width: 767px) {
   #r1 {
      background-color: #1E326D;
@@ -66,6 +75,11 @@ tr:nth-child(even) {
 
   #r4 {
      background-color: #6BCAB6;
+     height: 3rem; !important;
+  }
+
+  #r15 {
+     background-color: #495595;
      height: 3rem; !important;
   }
 }
