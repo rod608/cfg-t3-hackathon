@@ -23,7 +23,7 @@ def welcome():
         schools = schools[schools["Grade"] == first_answer]
         schools = schools[schools["Time_Available"] == second_answer]
         schools = schools[schools["Finances"] == third_answer]
-        
+        schools.rename(columns = {"Cost(3 diff ranges, annual)": "Cost"}, inplace = True)
         return render_template("result.html", schools=schools)
 
 
