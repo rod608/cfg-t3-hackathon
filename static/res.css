@@ -8,6 +8,10 @@ table {
     width: 100%;
 }
 
+.table-head {
+    text-align: left; !important;
+}
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
