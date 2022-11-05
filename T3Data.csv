@@ -1,0 +1,6 @@
+Grade,Finances,Time_Available,Name of Institution ,"Cost(3 diff ranges, annual)",Opportunity_Type,Need Based,City ,Size,Pub or Private,link
+HS,Low,2 year,Houston Community College ,5000,CC,Yes,"Houston,TX",Large,Public,https://bigfuture.collegeboard.org/colleges/houston-community-college-system/tuition-and-costs
+HS,Low,2 year,Collin County Community College District,5000,CC,Yes,"McKinney, TX",Large,Public,https://bigfuture.collegeboard.org/colleges/collin-county-community-college-district
+HS,Low,2 year,Tarrant County College,6000,CC,Yes,"Fort Worth, TX",Large,Public,https://bigfuture.collegeboard.org/colleges/tarrant-county-college
+HS,Low,2 year,Tarleton State University,15000,4Y,Yes,"Stephenville, TX",Large,Public,https://bigfuture.collegeboard.org/colleges/tarleton-state-university
+HS,Low,2 year,Texas Christian University,38000,4Y,Yes,"Fort Worth, TX",Large,Private,https://bigfuture.collegeboard.org/colleges/texas-christian-university
