@@ -32,6 +32,14 @@ def welcome():
 def home():
     return render_template("index.html")
 
+@app.route("/news")
+def news():
+    return render_template("newsletter.html")
+
+@app.route("/news/news2")
+def news2():
+    return render_template("newsletter.html")
+
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8000)
