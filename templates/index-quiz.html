@@ -27,8 +27,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="{{ url_for('home') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;">Home</a>
-        <a class="nav-link" href="{{ url_for('welcome') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;">Quiz</a>
+        <a class="nav-link" href="{{ url_for('home') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;"><strong>Home</strong></a>
+        <a class="nav-link" href="{{ url_for('welcome') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;"><strong>Quiz</strong></a>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@
         <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Poor Story', cursive;">Your Education Level?</h3>
 
         <div class="form-check mb-1 w-25 mx-auto">
-          <input class="form-check-input" type="radio" name="q1" id="middle_school"  value="MS">
+          <input class="form-check-input" type="radio" name="q1" id="middle_school"  value="MS" required>
           <label class="form-check-label" for="middle_school">
             Middle School
           </label>
@@ -68,7 +68,7 @@
 
         <div class="form-check mb-1 w-25 mx-auto">
 
-          <input class="form-check-input" type="radio" name="q2" id="1Y" value="<1 year">
+          <input class="form-check-input" type="radio" name="q2" id="1Y" value="<1 year" required>
 
           <label class="form-check-label" for="1Y">
             1 Year
@@ -96,7 +96,7 @@
         <h3 class="mb-2 pb-0 mt-2 text-center" style="font-family: 'Poor Story', cursive;">Your Household Income?</h3>
 
         <div class="form-check mb-1 w-25 mx-auto">
-          <input class="form-check-input" type="radio" name="q3" id="under20" value="Low">
+          <input class="form-check-input" type="radio" name="q3" id="under20" value="Low" required>
           <label class="form-check-label" for="under20">
             Under 20k
           </label>
@@ -120,7 +120,7 @@
     <hr class="w-75 mx-auto shadow border">
 
     <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-secondary mx-auto" value="Send Form">Submit</button>
+        <button type="submit" class="btn btn-secondary mx-auto shadow" value="Send Form">Submit</button>
     </div>
 </form>
 <!-- Bootstrap -->

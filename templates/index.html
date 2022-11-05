@@ -15,60 +15,60 @@
 
 <body>
   <!--- Nav Bar --->
-  <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
-    <h2 style="padding: 10px"></h2>
+  <nav class="navbar navbar-light navbar-expand-lg shadow mb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">T3 Partnership</a>
+      <a class="navbar-brand p-1" href="{{ url_for('home') }}">T3 Partnership</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="http://www.ecampustours.com/">TOUR</a>
+            <a class="nav-link active" href="https://t3partnership.org/about" target="_blank">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://t3partnership.org/about">ABOUT</a>
+            <a class="nav-link active" href="https://t3partnership.org/faqs" target="_blank">FAQs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://t3partnership.org/faqs">FAQS</a>
+            <a class="nav-link active" href="https://t3partnership.org/mentors" target="_blank">Mentors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://t3partnership.org/mentors">MENTORS</a>
+            <a class="nav-link active" aria-current="page" href="http://www.ecampustours.com/" target="_blank">Tour</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('news')}}">NEWSLETTER</a>
+          <a class="nav-link" href="{{ url_for('news')}}">NEWSLETTER</a>
+
+            <a class="nav-link active" href="https://lp.constantcontactpages.com/su/ZYJcR5C/T3partnership" target="_blank">Newsletter</a>
+
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <h2 style="padding: 30px"></h2>
-  <h1 class="text-center"><em>Your one-stop shop for everything postsecondary</em></h1>
+  <h1 class="text-center p-5"><em>Your one-stop shop for everything postsecondary</em></h1>
 
-  <div class="text-center">
-    <h2 style="padding: 25px"></h2>
+  <div class="text-center py-3">
     <img src="https://txwes.edu/media/communications-office/news-and-events/tarrant_to_and_through_logo.jpg"
-      style="width: 338px; height: 222px" />
+      style="width: 338px; height: 222px" alt="3T Partnership logo next to 'Tarrant To and Through'" />
   </div>
 
-  <h2 style="padding: 25px"></h2>
-  <h3 class="text-center">I am a...</h3>
+  <h3 class="text-center mt-5">I am the...</h3>
 
-  <div class="col-md-12 text-center">
-    <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button"
+  <div class="col-md-12 text-center mt-4">
+    <a href="{{ url_for('welcome') }}" class="btn btn-secondary btn-lg shadow me-2" role="button"
       aria-pressed="true">Student</a>
-    <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button"
+    <a href="{{ url_for('welcome') }}" class="btn btn-secondary btn-lg shadow ms-2" role="button"
       aria-pressed="true">Parent</a>
-    <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Student
-      and Parent</a>
+    <!-- <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Student
+      and Parent</a> -->
     <h2 style="padding: 45px"></h2>
   </div>
 
   <!-- Copyright -->
-  <footer class="text-center text-light p-3" style="background-color: rgb(2, 117, 216);">
+  <footer class="text-center text-light fixed-bottom p-3" style="background-color: #3671B3;">
     © 2022 Tarrant To & Through |
     777 Taylor Street, Suite 900, Fort Worth, TX 76102 |
     <a class="text-light" href="mailto: info@T3partnership.org">info@T3partnership.org</a>

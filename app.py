@@ -5,7 +5,12 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+
+@app.route("/quiz", methods=["GET", "POST"])
 def welcome():
     
     # the user has not filled out the quiz yet
@@ -23,14 +28,13 @@ def welcome():
         schools = schools[schools["Grade"] == first_answer]
         schools = schools[schools["Time_Available"] == second_answer]
         schools = schools[schools["Finances"] == third_answer]
-        schools.rename(columns = {"Cost(3 diff ranges, annual)": "Cost"}, inplace = True)
+        schools.rename(columns = {"Cost(3 diff ranges, annual)": "Cost", "Opportunity_Type":"Opportunity"}, inplace = True)
         schools["link"] = schools["link"].apply(lambda x: "<a href="+x+">Cost Information</a>")
-        return render_template("result.html", schools=schools)
-
-
-@app.route("/home")
-def home():
-    return render_template("index.html")
+        
+        if second_answer == "<1 year":
+            return render_template("result_one_year.html", schools=schools)
+        else:
+            return render_template("result.html", schools=schools)
 
 @app.route("/news")
 def news():
