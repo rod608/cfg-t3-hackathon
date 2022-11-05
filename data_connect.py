@@ -8,4 +8,6 @@ from couchbase.options import ClusterOptions, QueryOptions
 
 # get a reference to our cluster
 cluster = Cluster.connect('22fi4p7puvkvalyy.kzlwt6sd0zfe6pu6.cloud.couchbase.com', ClusterOptions(
-  PasswordAuthenticator('team14', 'CFGteam14!')))
+  PasswordAuthenticator('team14', 'CFGteam14!'))) 
+
+  
