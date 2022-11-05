@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+  #choose {
+    margin-bottom: 0; !important;
+    padding-bottom: 0; !important;
+    max-height: 40px !important;
+  }
+
+  #top {
+    margin-bottom: 30px;
+  }
+}
