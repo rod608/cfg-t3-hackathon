@@ -35,3 +35,8 @@ form {
     100%{background-position:0% 50%}
 }
 
+@media (max-width: 590px) {
+  .form-check {
+    min-width: 60%; !important;
+  }
+}
