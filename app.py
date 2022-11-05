@@ -19,4 +19,13 @@ def welcome():
         second_answer = request.form.get("q2")
         third_answer = request.form.get("q3")
         return "Your name is "+ first_answer + second_answer + third_answer
+
+
+@app.route("/home")
+def home():
+    return render_template("index.html")
+
+
+if __name__ == "__main__":
+    app.run(host="localhost", port=8000)
     

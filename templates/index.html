@@ -10,7 +10,7 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,11 +60,11 @@
   <h3 class="text-center">I am a...</h3>
 
   <div class="col-md-12 text-center">
-    <a href="templates/index-quiz.html" class="btn btn-warning btn-lg active" role="button"
-      aria-pressed="true">Student</a>
-    <a href="templates/index-quiz.html" class="btn btn-warning btn-lg active" role="button"
-      aria-pressed="true">Parent</a>
-    <a href="templates/index-quiz.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Student
+    <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button"
+       aria-pressed="true">Student</a>
+    <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button"
+       aria-pressed="true">Parent</a>
+    <a href="{{ url_for('welcome') }}" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Student
       and Parent</a>
   </div>
 
